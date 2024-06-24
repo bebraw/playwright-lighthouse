@@ -1,5 +1,5 @@
 {
-  "name": "playwright-lighthouse",
+  "name": "@bebraw/playwright-lighthouse",
   "version": "4.0.0",
   "description": "Playwright Lighthouse Audit",
   "main": "index.js",

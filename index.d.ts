@@ -1,3 +1,4 @@
+import { startFlow as sf } from 'lighthouse';
 import type { Page } from 'playwright-core';
 import type { Flags, Config, RunnerResult } from 'lighthouse';
 
@@ -59,3 +60,15 @@ export interface playwrightLighthouseResult extends RunnerResult {
 export function playAudit(
   playwrightLHConfiguration: playwrightLighthouseConfig
 ): Promise<playwrightLighthouseResult>;
+
+export function startFlow(
+  playwrightLHConfiguration: playwrightLighthouseConfig
+): ReturnType<typeof sf>;
+
+// TODO: Likely this isn't completely accurate
+export function getReport(
+  lhr: string,
+  dir: string,
+  name: string,
+  type: string,
+): void;
